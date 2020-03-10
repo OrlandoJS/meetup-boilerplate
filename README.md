@@ -1,7 +1,8 @@
 # Meetup boilerplate
 This is the boilerplate (HTML and CSS) for our Meetup project for the OrlandoJS "Framework Battles".
 
-[logo]: https://p196.p4.n0.cdn.getcloudapp.com/items/JruWxJqN/Screen+Recording+2020-03-10+at+03.53+PM.gif 
+![](https://p196.p4.n0.cdn.getcloudapp.com/items/JruWxJqN/Screen+Recording+2020-03-10+at+03.53+PM.gif )
+
 
 ## Getting Started
 Just clone this repo locally and get the markup and styles.
