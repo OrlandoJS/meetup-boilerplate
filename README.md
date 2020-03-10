@@ -1,7 +1,7 @@
 # Meetup boilerplate
 This is the boilerplate (HTML and CSS) for our Meetup project for the OrlandoJS "Framework Battles".
 
-![](https://p196.p4.n0.cdn.getcloudapp.com/items/JruWxJqN/Screen+Recording+2020-03-10+at+03.53+PM.gif)
+![](http://websolutionsfl.com/img/orlando-js.gif)
 
 
 ## Getting Started
