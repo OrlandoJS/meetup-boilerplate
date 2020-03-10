@@ -16,7 +16,7 @@ Repo: https://github.com/OrlandoJS/meetup-api
 
 To understand how to call the API, take a look on the tests: https://github.com/OrlandoJS/meetup-api/blob/master/test/app_test.js
 
-Keep it simples! Avoid crazy abstractions, it's just to people see how you start a project and can compare technologies.
+Keep it simple! Avoid crazy abstractions, it's just to people see how you start a project and then we can compare  with other technologies.
 
 
 Have fun!
