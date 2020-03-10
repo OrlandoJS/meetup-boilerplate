@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Framework Battle</title>
+</head>
+<body>
+  <main class="app">
+    <section class="main-wrapper" id="main_wrapper">
+      <div class="add-event">
+        <h2>Add New Event</h2>
+
+        <form class="add-new-form">
+
+          <div class="form-row">
+            <div class="event-title-wrapper">
+              <label>Event Title</label>
+              <input type="text" placeholder="Event Title" />
+            </div>
+  
+            <div class="event-date-wrapper">
+              <label>Event Date</label>
+              <input type="text" placeholder="04/10/2020" />
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <button type="button" class="save-btn button">Save</button>
+          </div>
+
+        </form>
+      </div>
+      
+      <div class="events-wrapper" id="events_wrapper">
+        
+        <div class="upcoming-top">
+          <h2>Upcoming Events</h2>
+          <button class="add-new-btn button" id="add_new">Add New</button>
+        </div>
+
+        <section class="events-list">
+          
+          <article class="event">
+            <div class="calendar">
+              <div class="month">APR</div>
+              <div class="day">12</div>
+            </div>
+
+            <div class="event-wrapper">
+              <h3 class="event-title">Making API calls using Axios</h3>
+              <div class="attendees">35 attendees <span class="attend-btn">Attend</span></div>
+            </div>
+            <div class="delete-event">
+              <span class="fa fa-trash-o"></span>
+            </div>
+          </article>
+
+          <article class="event">
+            <div class="calendar">
+              <div class="month">APR</div>
+              <div class="day">13</div>
+            </div>
+
+            <div class="event-wrapper">
+              <h3 class="event-title">Deploying JS to AWS</h3>
+              <div class="attendees">50 attendees <span class="attend-btn active">Attending</span></div>
+            </div>
+            <div class="delete-event">
+              <span class="fa fa-trash-o"></span>
+            </div>
+          </article>
+
+          <article class="event">
+            <div class="calendar">
+              <div class="month">MAY</div>
+              <div class="day">14</div>
+            </div>
+
+            <div class="event-wrapper">
+              <h3 class="event-title">Serverless in JS</h3>
+              <div class="attendees">56 attendees <span class="attend-btn">Attend</span></div>
+            </div>
+            <div class="delete-event">
+              <span class="fa fa-trash-o"></span>
+            </div>
+          </article>
+
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+
+<script>
+
+let isAdding = false;
+
+const addNewButton = document.getElementById('add_new');
+const mainWrapper = document.getElementById('main_wrapper');
+
+addNewButton.addEventListener('click', () => {
+  
+  if(!isAdding) {
+    mainWrapper.classList.add('is-adding');
+    addNewButton.innerHTML = "Close"
+    isAdding = true;
+  } else {
+    mainWrapper.classList.remove('is-adding');
+    addNewButton.innerHTML = "Add New"
+    isAdding = false;
+  }
+  
+})
+
+</script>
+</html>

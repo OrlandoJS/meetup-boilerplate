@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  background: #F4F2F2;
+  color: #444444; }
+
+.button {
+  border: none;
+  background: #A89089;
+  border-radius: 7px;
+  color: #FFFFFF;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  outline: none;
+  cursor: pointer;
+  transition: all .1s ease-in-out; }
+  .button:hover {
+    background: #9e867f; }
+  .button:active {
+    transform: scale(0.98);
+    background: #99817a; }
+
+h2 {
+  font-size: 20px;
+  color: #E75A6A;
+  margin: 0; }
+
+input {
+  color: #444444;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  background: #FFF;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  padding: 12px;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09); }
+  input::placeholder {
+    color: #C1C1C1;
+    opacity: 1; }
+
+.app {
+  display: flex;
+  padding-top: 110px;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center; }
+
+.main-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 510px;
+  padding: 0 15px; }
+  .main-wrapper.is-adding .events-wrapper {
+    transform: translateY(150px); }
+  .main-wrapper.is-adding .add-event {
+    transform: translateY(-55px); }
+
+.events-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  background: #FAFAFA;
+  border-radius: 20px;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.09);
+  transition: all .5s ease-in-out; }
+  .events-wrapper .upcoming-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px; }
+    .events-wrapper .upcoming-top .add-new-btn {
+      margin-left: auto;
+      width: 100%;
+      max-width: 130px; }
+  .events-wrapper .events-list .event {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 40px 25px;
+    padding-bottom: 30px;
+    margin-bottom: 45px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.09); }
+    .events-wrapper .events-list .event:last-child {
+      margin-bottom: 0; }
+    .events-wrapper .events-list .event:hover .calendar {
+      transform: scale(1.2); }
+    .events-wrapper .events-list .event .calendar {
+      position: absolute;
+      display: flex;
+      background: #FFFFFF;
+      flex-direction: column;
+      justify-content: center;
+      top: -20px;
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 6px;
+      box-shadow: 0 4px 9px rgba(0, 0, 0, 0.11);
+      transition: all .15s ease-in-out; }
+      .events-wrapper .events-list .event .calendar .month {
+        font-size: 11px;
+        font-weight: bold;
+        color: #E75A6A; }
+      .events-wrapper .events-list .event .calendar .day {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000; }
+    .events-wrapper .events-list .event .event-wrapper h3.event-title {
+      color: #444444;
+      font-size: 17px;
+      margin: 0; }
+    .events-wrapper .events-list .event .event-wrapper .attendees {
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 7px;
+      color: #A89089; }
+      .events-wrapper .events-list .event .event-wrapper .attendees .attend-btn {
+        display: inline-block;
+        margin-left: 17px;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer; }
+        .events-wrapper .events-list .event .event-wrapper .attendees .attend-btn.active {
+          color: #D0C4BF;
+          text-decoration: none;
+          opacity: .6; }
+    .events-wrapper .events-list .event .delete-event {
+      margin-left: auto;
+      margin-right: -10px;
+      padding: 10px;
+      font-size: 17px;
+      color: #E75A6A;
+      cursor: pointer;
+      transition: all .15s ease-in-out; }
+      .events-wrapper .events-list .event .delete-event:hover {
+        transform: scale(1.3); }
+
+.add-event {
+  position: absolute;
+  left: 20px;
+  right: 10px;
+  top: 5px;
+  height: 100%;
+  background: #DBCEC9;
+  color: #8D7872;
+  border-radius: 20px;
+  padding: 25px;
+  transition: all .7s ease-in-out; }
+  .add-event h2 {
+    color: #8D7872;
+    margin-bottom: 13px; }
+  .add-event .form-row {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center; }
+    .add-event .form-row label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 6px; }
+    .add-event .form-row .event-title-wrapper {
+      width: 100%; }
+    .add-event .form-row .event-date-wrapper {
+      width: 100%;
+      max-width: 105px;
+      margin-left: 23px; }
+    .add-event .form-row .save-btn {
+      width: 100%;
+      max-width: 220px; }
+
+/*# sourceMappingURL=main.css.map */
